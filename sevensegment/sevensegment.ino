@@ -86,3 +86,4 @@ __interrupt void Timer_A(void) {
                 // If this number is higher than 500 then most people will see the 7 seg display flicker badly!
 }
 
+
