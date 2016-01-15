@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>
+Create your Independence Day flag!
+</p>
+
+<form action="generateFlag.php" method="POST" oninput="flagSizeOut.value=flagSize.value">
+  When is your Independence Day?
+  <input type="date" name="Iday" />
+  <br><br>
+  
+  What color is your flag?
+  <br>
+  <input type="checkbox" name="Cflag1" />Red
+  <br>
+  <input type="checkbox" name="Cflag2" />Orange
+  <br>
+  <input type="checkbox" name="Cflag3" />Green
+  <br>
+  <input type="checkbox" name="Cflag4" />Blue
+  <br><br>  
+  
+  How long is your flag? (in feet)
+  <input id="flagSize" name="flagSize" type="range" name="points" min="5" max="15" onchange="printValue('flagSize','flagSizeOut')" />
+  <output name="flagSizeOut" for="flagSize">5</output>
+  <br><br>
+  
+  
+  <input type="submit" value="Make Flag!">
+</form>
+
+</body>
+</html>
